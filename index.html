@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+</head>
+<body>
+  <h1>Formulario de Registro</h1>
+  <form>
+    <label for="nombre">Nombre y Apellidos:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br><br>
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="time" id="fecha_nacimiento" name="fecha_nacimiento" required>
+    <br><br>
+    <label for="ocupacion">Ocupación:</label>
+    <input type="text" id="ocupacion" name="ocupacion" required>
+    <br><br>
+  </form>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <form>
+    <label for="contacto">Contacto (teléfono, email):</label>
+    <input type="text" id="contacto" name="contacto" required>
+    <br><br>
+    <label for="nacionalidad">Nacionalidad:</label>
+    <select id="nacionalidad" name="nacionalidad" required>
+      <option value="">Seleccione una opción</option>
+      <option value="argentina">Argentina</option>
+      <option value="brasil">Brasil</option>
+      <option value="chile">Chile</option>
+      <option value="colombia">Colombia</option>
+      <option value="mexico">México</option>
+      <option value="peru">Perú</option>
+    </select>
+    <br><br>
+    <label for="nivel_ingles">Nivel de inglés:</label>
+    <br>
+    <input type="radio" id="basico" name="nivel_ingles" value="basico" required>
+    <label for="basico">Básico</label>
+    <br>
+    <input type="radio" id="intermedio" name="nivel_ingles" value="intermedio">
+    <label for="intermedio">Intermedio</label>
+    <br>
+    <input type="radio" id="avanzado" name="nivel_ingles" value="avanzado">
+    <label for="avanzado">Avanzado</label>
+    <br>
+    <input type="radio" id="fluido" name="nivel_ingles" value="fluido">
+    <label for="fluido">Fluido</label>
+    <br><br>
+    <input type="submit" value="Enviar">
+  </form>
+  <br>
+  <label for="lenguajes">Lenguajes de programación:</label>
+<select id="lenguajes" name="lenguajes[]" multiple>
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="javascript">JavaScript</option>
+  <option value="php">PHP</option>
+  <option value="python">Python</option>
+  <option value="java">Java</option>
+  <option value="c">C</option>
+</select>
+<br><br>
+<label for="aptitudes">Aptitudes:</label>
+<input type="text" id="aptitudes" name="aptitudes">
+<datalist id="aptitudes-list">
+  <option value="Comunicación">
+  <option value="Trabajo en equipo">
+  <option value="Resolución de problemas">
+  <option value="Liderazgo">
+  <option value="Creatividad">
+  <option value="Adaptabilidad">
+</datalist>
+<input type="datalist" list="aptitudes-list">
+<br><br>
+<label for="habilidades">Habilidades:</label>
+<br>
+<input type="checkbox" id="habilidades1" name="habilidades[]" value="Comunicación">
+<label for="habilidades1">Comunicación</label>
+<br>
+<input type="checkbox" id="habilidades2" name="habilidades[]" value="Trabajo en equipo">
+<label for="habilidades2">Trabajo en equipo</label>
+<br>
+<input type="checkbox" id="habilidades3" name="habilidades[]" value="Resolución de problemas">
+<label for="habilidades3">Resolución de problemas</label>
+<br>
+<input type="checkbox" id="habilidades4" name="habilidades[]" value="Liderazgo">
+<label for="habilidades4">Liderazgo</label>
+<br>
+<input type="checkbox" id="habilidades5" name="habilidades[]" value="Creatividad">
+<label for="habilidades5">Creatividad</label>
+<br>
+<input type="checkbox" id="habilidades6" name="habilidades[]" value="Adaptabilidad">
+<label for="habilidades6">Adaptabilidad</label>
+<br><br>
+<label for="perfil">Perfil:</label>
+<br>
+<textarea id="perfil" name="perfil"></textarea>
+</body>
+</html>
